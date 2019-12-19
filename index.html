@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=fallback" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Number Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Number Game</h1>
+        <div><button id="start">Start</button></div>
+        <div class="info">
+            <div class="infoItem"><span id="timer"></span></div>
+            <div class="infoItem" id="scoreDiv">Score: <span id="score">0</span></div>
+            <div class="infoItem" id="livesDiv"></div>
+        </div>
+        <div class="main">
+            <div class="mainItem"><button id="sound"><i class="fa fa-play-circle" aria-hidden="true"></i></button></div>
+            <div class="mainItem mainInput"><input type="text" name="numberGuess" id="numberGuess"></div>
+            <div class="mainItem"><button id="enter"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button></div>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</script>
+</html>
