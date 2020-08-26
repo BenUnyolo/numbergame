@@ -7,8 +7,22 @@
 
 html * {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 28px;
     box-sizing: border-box;
+    font-size: 28px;
+}
+
+@media (max-width:480px) {
+    html * {
+      font-size: 24px;
+      line-height: 1;
+    }
+}
+
+@media (max-width:480px) {
+    body {
+      font-size: 24px;
+      line-height: 1;
+    }
 }
 
 body {
@@ -27,15 +41,20 @@ h1 {
     color: var(--highlight-color);
 }
 
+@media (max-width:480px) {
+    h1 {
+      font-size: 1.75em;
+      line-height: 1;
+    }
+}
+
 p {
     margin: 0 0 0.5em 0;
 }
 
 .container {
     background: white;
-    /* max-width: 35rem; */
     width: 35rem;
-    min-width: 25rem;
     margin: auto;
     border-radius: 1rem;
     padding: 10px;
@@ -64,11 +83,6 @@ p {
     display: none;
     align-items: center;
     margin: 0px 0px 10px 0px;
-}
-
-.mainItem {
-    /* background-color: yellow; */
-    /* border: 1px solid black; */
 }
 
 .mainInput {
@@ -102,7 +116,8 @@ p {
 }
 
 #start {
-	background-color: #ededed;
+    background-color: #ededed;
+    font-size: 22px;
 	border-radius: 28px;
 	border: 1px solid #dcdcdc;
     display: block;
@@ -110,6 +125,12 @@ p {
 	cursor: pointer;
 	padding: 8px 22px;
     text-decoration: none;
+}
+
+@media (max-width:480px) {
+    #start {
+      font-size: 18px;
+    }
 }
 
 #start:hover {
